@@ -1,9 +1,14 @@
+import sys
+
 class Node:
     def __init__(self, data):
         self.data = data
         self.next = None
 
 # linkedList subclasscd
+#Prompt   - Example: 
+#   > Input:  I-> ->l->o->v->e-> ->G->e->e->k->s-> ->f->o->r-> ->G->e->e->k->s->NULL
+#   > Output: G->e->e->k->s-> ->f->o->r-> ->G->e->e->k->s-> ->l->o->v->e-> ->I->NULL
 
 class LinkedList:
     def __init__(self):
@@ -82,26 +87,26 @@ class LinkedList:
 
 
 List_list1 = LinkedList()
-List_list1.append(7)
-List_list1.append(6)
 List_list1.append(5)
+List_list1.append(6)
+List_list1.append(3)
 
 List_list2 = LinkedList()
-List_list2.append(3)
+List_list2.append(8)
 List_list2.append(4)
 List_list2.append(2)
 
-print(567 + 242)
+print(563 + 842)
 # List_list1.two_list_summation(List_list2)
 
 
 print(f"Reverse string function is below")
 
 ReverseSentence = LinkedList()
-ReverseSentence.append("lvoe")
-ReverseSentence.append("Now")
-ReverseSentence.append("lets")
-ReverseSentence.append("Bye")
+ReverseSentence.append("I Love ")
+ReverseSentence.append("Geeks")
+ReverseSentence.append("for")
+ReverseSentence.append("Geeks")
 
 print(f"before reverse")
 ReverseSentence.print_list()
@@ -110,3 +115,4 @@ print("After reversing")
 
 ReverseSentence.sentence_reverse(ReverseSentence)
 ReverseSentence.print_list()
+
